@@ -7,7 +7,7 @@ CFLAGS = -Wall -std=c11 -g -pedantic
 program: makeprogram runprogram
 
 makeprogram:
-	$(CC) $(CFLAGS) -Iinclude src/utilities.c test/testmain.c -o bin/prog
+	$(CC) $(CFLAGS) -Iinclude src/utilities.c src/Numbers.c src/DynamicString.c test/testmain.c -o bin/prog
 
 runprogram:
 	./bin/prog
